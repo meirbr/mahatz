@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Yiddish';
+    src: url('subset-YiddishkeitAlefAlefAlef-Bold.eot');
+    src: url('subset-YiddishkeitAlefAlefAlef-Bold.eot?#iefix') format('embedded-opentype'),
+        url('subset-YiddishkeitAlefAlefAlef-Bold.woff2') format('woff2'),
+        url('subset-YiddishkeitAlefAlefAlef-Bold.woff') format('woff'),
+        url('subset-YiddishkeitAlefAlefAlef-Bold.ttf') format('truetype'),
+        url('subset-YiddishkeitAlefAlefAlef-Bold.svg#YiddishkeitAlefAlefAlef-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Guttman Stam';
+    src: url('subset-GuttmanStamNormal.eot');
+    src: url('subset-GuttmanStamNormal.eot?#iefix') format('embedded-opentype'),
+        url('subset-GuttmanStamNormal.woff2') format('woff2'),
+        url('subset-GuttmanStamNormal.woff') format('woff'),
+        url('subset-GuttmanStamNormal.svg#GuttmanStamNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f7ebff } 
+	</style>
+	<path id="Layer 1" class="shp0" d="M5 4L43 4L43 10L5 10L5 4Z" />
+	<path id="Layer 1 copy" class="shp0" d="M5 21L43 21L43 27L5 27L5 21Z" />
+	<path id="Layer 1 copy 2" class="shp0" d="M5 37L43 37L43 43L5 43L5 37Z" />
+</svg>

@@ -1,0 +1,2598 @@
+/* [Master Stylesheet] */
+
+/* ------------------------------------------------
+:: Author: Meir Brandwine
+------------------------------------------------ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+@import 'css/bootstrap.min.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/animate.css';
+@import 'css/magnific-popup.css';
+@import 'css/font-awesome.min.css';
+@import 'css/sidetab.css';
+@import 'fonts/alef.css';
+@import 'fonts/opensans.css';
+@import 'fonts/yidish.css';
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+
+/* --------------------------
+:: 1.0 Base CSS Start
+-------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family:'Heebo', 'Roboto', sans-serif;
+    background-image: url("img/bg-img/back.png");
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:'Heebo', 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #404551;
+    line-height: 1.6;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    color: #abadbe;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 1.9;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section_padding_100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section_padding_100_0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section_padding_100_50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section_padding_100_70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section_padding_50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section_padding_50_20 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.section_padding_150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.section_padding_200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section_padding_0_100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section_padding_70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section_padding_0_50 {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+#preloader {
+    overflow: hidden;
+    background-color: #211b31;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.mosh-preloader {
+    overflow: hidden;
+    -webkit-animation: 3000ms linear 0s normal none infinite running mosh-preloader;
+    animation: 3000ms linear 0s normal none infinite running mosh-preloader;
+    background-color: transparent;
+    border-color: #f1f2f3 #f1f2f3 #4a7aec;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    height: 50px;
+    left: calc(50% - 25px);
+    position: relative;
+    top: calc(50% - 25px);
+    width: 50px;
+    z-index: 9;
+}
+
+@-webkit-keyframes mosh-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mosh-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#scrollUp {
+    bottom: 0;
+    font-size: 24px;
+    right: 30px;
+    width: 40px;
+    background: #4a7aec;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 0;
+    box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mosh-table {
+    display: table;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.mosh-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-heading {
+    margin-bottom: 100px;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+        line-height: 1.6;
+
+}
+
+.section-heading > p {
+    font-weight: 700;
+    color: #bec0cc;
+    font-size: 13px;
+    text-transform: uppercase;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+text-align: justify;
+        line-height: 1.6;
+
+}
+
+.section-heading b {
+font-weight:bold;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+font-size:19px;
+        line-height: 1.6;
+}
+
+.section-heading > h2 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 900;
+font-family:'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.section-heading > h5 {
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.section-heading > h4 {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.section-heading ul{
+list-style-type: circle;
+list-style-image: url('img/core-img/favicon.ico');
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+    font-weight: 700;
+}
+
+
+.mh-btn {
+    background-color: #39879D;
+    min-width: 150px;
+    height: 54px;
+    padding: 0 30px;
+    border-radius: 70px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.mh-btn:hover {
+    background-color: #00C4F0;
+    color: #fff;
+}
+
+.bg-overlay,
+.bg-overlay-white {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay:after,
+.bg-overlay-white:after {
+    background-color: rgba(33, 27, 49, 0.88);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+    position: absolute;
+}
+
+.bg-overlay-white:after {
+    background-color: rgba(231, 235, 246, 0.89);
+}
+
+.bg-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* --------------------------
+:: 2.0 Header Area CSS
+-------------------------- */
+
+.header_area {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    padding: 0 15px;
+    height: 120px;
+    background-color: transparent;
+    -webkit-transition-duration: 700ms;
+    transition-duration: 700ms;
+grid-area: head;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.menu_area {
+    position: relative;
+    z-index: 2;
+grid-area: head;
+align-self:center;
+    justify-self: center;
+    text-align: center;
+}
+
+.menu_area img {
+    height: 60px;
+    width: 60px;
+}
+
+.menu_area #nav .nav-link {
+    color: #F7EBFF;
+    display: block;
+    font-size: 20px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 0 15px;
+grid-area: head;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+        line-height: 1.6;
+
+}
+
+.menu_area #nav .nav-linkm {
+    color: #F7EBFF;
+    display: block;
+    font-size: 20px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    padding: 0 15px;
+grid-area: head;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+        line-height: 1.6;
+
+}
+
+
+.menu_area .dropdown-menu.show {
+    border: none;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu_area .dropdown-item {
+    font-size: 20px;
+    font-weight: 700;
+    color: #9597a6;
+text-align:right;
+margin-bottom:10px;
+        line-height: 1.6;
+
+    
+}
+
+.menu_area #nav .nav-link:hover,
+.menu_area #nav .nav-item.active .nav-link,
+.menu_area .dropdown-item:hover {
+    color: #00ABC5;
+}
+
+.menu_area #nav .nav-linkm:hover,
+.menu_area #nav .nav-item.active .nav-linkm,
+.menu_area .dropdown-item:hover {
+    color: #2D8495;
+}
+
+.login-register-btn a {
+    color: #4a7aec;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.login-register-btn a:hover {
+    color: #00ABC5;
+}
+
+.search-button > a {
+    margin: 0 80px;
+}
+
+.navbar-nav {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+grid-area: head;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    text-align: center;
+}
+
+/* Search Form CSS */
+
+.search-form-area {
+    width: auto;
+    height: 50px;
+    display: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.search-form-open .search-form-area {
+    display: block !important;
+}
+
+.search-form-open .navbar-nav {
+    display: none !important;
+}
+
+.search-form-area #search {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    padding: 0 30px;
+    color: #fff !important;
+    font-size: 14px;
+    background-color: transparent;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+/* Sticky CSS */
+
+.header_area.sticky {
+    background-color: #211b31;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+/* --------------------------
+:: 3.0 Welcome Area CSS
+-------------------------- */
+
+.welcome_area {
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+}
+
+.welcome_area h1{
+font-size: 13px;
+color: white;
+}
+
+
+.mh-presec-area h1{
+font-size: 11px;
+color: white;
+font-family: 'Heebo', Alef, David;
+        line-height: 1.6;
+
+}
+
+.hero-slides {
+    position: relative;
+    z-index: 2;
+}
+
+.single-hero-slide {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 700px;
+}
+
+.single-hero-slide b{
+    color: #00C4F0;
+}
+
+.single-hero-slide h4 {
+font-family:'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.single-hero-slide img {
+height:50%;
+width:50%;
+}
+
+.hero-slide-content h2 {
+    font-size: 56px;
+    color: #fff;
+    line-height: 1.8;
+font-family:'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+
+.hero-slide-content h4 {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0;
+font-size: 26px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.hero-slide-content h2 {
+    
+}
+.hero-slide-content h5 {
+    color: #fff;
+    margin-bottom: 3%;
+font-family: 'Yiddish', Guttman Stam, Alef, David, "Times New Roman", Times, serif;
+font-size: 28px;
+    width: 60%;
+}
+
+.hero-slide-content .slide-img {
+    color: #fff;
+    margin-top: 0px;
+    font-weight: 400;
+    width: 50%;
+height: 50%;
+}
+
+.hero-slide-content .slide-img img{
+    width: 50%;
+height: 50%;
+}
+
+.hero-slide-content img{
+    width: 50%;
+height: 50%;
+}
+
+
+.hero-slides .owl-prev,
+.hero-slides .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    line-height: 60px;
+    text-align: center;
+    top: 50%;
+    margin-top: 30px;
+    left: 50px;
+    border-radius: 50%;
+    color: #a2baff;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+z-index:3;
+}
+
+.hero-slides .owl-next {
+    left: auto;
+    right: 50px;
+}
+
+.hero-slides .owl-prev:hover,
+.hero-slides .owl-next:hover {
+    background-color: #4a7aec;
+}
+
+
+
+/* -------------------------
+:: 4.0 Service Area
+------------------------- */
+
+.mosh-service-slides {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.single-service-area {
+    all: initial;
+}
+
+
+.single-service-area h2 {
+    all: inherit;
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-transition-duration: 5000ms;
+    transition-duration: 5000ms;
+    color: #bec0cc;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+    margin-bottom: none;
+    padding: none;
+}
+
+.mosh-service-slides .center .single-service-area h2,
+.single-service-area:hover h2 {
+    color: #4a7aec;
+}
+
+.single-service-area h4 {
+    margin-top: none;
+    padding: none;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.single-service-area p {
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+        line-height: 1.6;
+
+}
+
+.mosh-service-slides .owl-prev,
+.mosh-service-slides .owl-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    line-height: 50px;
+    text-align: center;
+    top: 50%;
+    margin-top: -30px;
+    left: -25px;
+    border-radius: 50%;
+    color: #a2baff;
+    -webkit-transition-duration: 5000ms;
+    transition-duration: 5000ms;
+}
+
+.mosh-service-slides .owl-next {
+    left: auto;
+    right: -25px;
+}
+
+
+/* -------------------------
+:: 5.0 Clients Area
+------------------------- */
+
+.clients-logo-area > a > img {
+    max-width: 170px;
+    height: auto;
+}
+
+/* -------------------------
+:: 6.0 Features Area
+------------------------- */
+
+.mosh-features-area {
+    background-color: #211b31;
+    position: relative;
+    z-index: 1;
+  align-items: center;
+}
+
+.features-img > img {
+    width: 40%;
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    z-index: 9;
+}
+
+.single-feature {
+ padding: 20px 20px 20px 20px;  
+    background-image: url("img/blog-img/maslulim-4.jg");
+    margin-bottom: 25px;
+    width: 85%;
+    min-height: 400px;
+}
+
+.bg-feature {
+    	background-color: (#31607E 20%, white 80%);
+}
+
+.single-feature:hover a {
+font-size: 30px;
+}
+
+
+
+.mosh-features-area .section-heading {
+    margin-bottom: 60px;
+}
+
+.mosh-features-area .section-heading h2 {
+    color: #fff;
+}
+
+.barfiller {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #4a7aec;
+    z-index: 1;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    margin-top: -35px;
+    padding: 2px 4px;
+    font-size: 15px;
+    color: #4a7aec;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+    font-weight: 500;
+}
+
+.barfiller .tip:after {
+    display: none;
+}
+
+.single_progress_bar p {
+    margin-bottom: 10px;
+}
+
+
+
+.feature-content p{
+ text-align: justify; 
+    font-size: 16px;
+    color:#211B31;
+}
+
+.feature-content a{
+ text-align: left;
+    color: #228294;
+    font-size: 24px;
+}
+.feature-content a:hover{
+    color: #0C8396;
+}
+
+.single-feature img {
+    margin-left: 30px;
+ width: 70px;
+    height: 70px;
+}
+
+.single-feature:hover img {
+ width: 80px;
+    height: 80px;
+}
+
+    .mobile-footer {
+                display: block;
+
+    }
+
+
+
+/* -------------------------
+:: 7.0 More Service Area
+------------------------- */
+
+.single-more-service-area {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition-duration: 750ms;
+    transition-duration: 750ms;
+}
+
+.single-more-service-area:hover {
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.more-service-content > img {
+    margin-bottom: 40px;
+}
+
+.more-service-content > h4 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* -------------------------
+:: 8.0 Portfolio Area
+------------------------- */
+
+.portfolio-menu {
+    margin-bottom: 100px;
+    margin-top: -10px;
+}
+
+.portfolio-menu > p {
+    display: inline-block;
+    padding: 0 15px;
+    cursor: pointer;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0;
+}
+
+.portfolio-menu > p:hover {
+    color: #4a7aec;
+}
+
+.single_gallery_item {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    z-index: 3;
+    position: relative;
+    overflow: hidden
+}
+
+.single_gallery_item > img {
+    width: 100%;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single_gallery_item:hover > img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="8" /></filter></svg>#filter');
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=8);
+}
+
+.gallery-hover-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    background-color: rgba(74, 122, 236, 0.85);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single_gallery_item:hover .gallery-hover-overlay {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.port-hover-text h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.port-hover-text > a {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* -------------------------
+:: 9.0 Workflow Area
+------------------------- */
+
+.workflow-img {
+    position: relative;
+    z-index: -10;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.single-workflow-area > h2 {
+    font-size: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 47px;
+    flex: 0 0 47px;
+    width: 47px!important;
+    height: 47px!important;
+    text-align: center;
+    background-color: #f3f5f9;
+    line-height: 47px;
+    border-radius: 50%;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.workflow-content h4 {
+    margin-bottom: 30px;
+}
+
+.single-workflow-area:hover h2 {
+    background-color: #4a7aec;
+    color: #fff;
+}
+
+.workflow-slides-area {
+    position: relative;
+    z-index: 99;
+    top: -100px;
+}
+
+.mosh-workflow-slides .owl-dots {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.mosh-workflow-slides .owl-dot {
+    background-color: #daddeb;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.mosh-workflow-slides .owl-dot.active {
+    background-color: #4a7aec;
+}
+
+/* -------------------------
+:: 10.0 CTA Area
+------------------------- */
+
+.mosh-call-to-action-area {
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.cta-content .section-heading {
+    margin-bottom: 0;
+}
+
+.cta-content .section-heading h2 {
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 44px;
+}
+
+/* -------------------------
+:: 11.0 FAQ Area
+------------------------- */
+
+.panel {
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent;
+    margin-bottom: 15px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #39879D;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+text-align: right;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+color:white;
+}
+
+.align-justify {
+ align-items: justify;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+
+.accordionpos {
+color:#444444;
+  cursor: pointer;
+text-align: justify;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+font-size: 20px;
+margin-left: 6px;
+margin-top: 3px;
+}
+
+.accordionpos h5 {
+color:#444444;
+  cursor: pointer;
+text-align: justify;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+font-size: 20px;
+margin-left: 6px;
+margin-top: 3px;
+}
+
+.accordionpos:hover {
+color:#2E8FA2;
+}
+
+.tabher{
+}
+
+.tabher button {
+        background-color: #003D4E;
+  cursor: pointer;
+  width: 18%;
+  transition: 0.4s;
+font-family: 'Heebo', Open Sans Hebrew, David, "Times New Roman", Times, serif;
+color:white;
+margin-right: 1%;
+  border-bottom: 15px solid #004A41;
+text-align:center;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+}
+
+.tabher button h3{
+    background-color: #004A41;
+  color: white;
+font-family: 'Heebo', Open Sans Hebrew, David, "Times New Roman", Times, serif;
+text-align:center;
+width:100%;
+height:40%;
+    top:0;
+}
+
+.tabher button:hover h3 {
+    color: #211B31;
+}
+
+.tabher button p{
+  background-color: #003D4E;
+  color: white;
+  cursor: pointer;
+    font-family: 'Heebo', Open Sans Hebrew, David, "Times New Roman", Times, serif;
+    text-align:center;
+    font-size: 16px;
+    height: 70px;
+}
+
+.panelher {
+  padding: 6px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+text-align:justify;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+background-color:#f2f2f2;
+    color: #4a7aec;
+    border-top:none;
+}
+
+
+.accordioneng {
+color: blue;
+font-size: 22px;
+  cursor: pointer;
+text-align: right;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+margin-left: 6px;
+}
+
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panela {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+text-align: justify;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+background-color:#F8F8FF;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panela p{
+color: #444444;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+.single-accordion:last-of-type {
+    margin-bottom: 0px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.single-accordion h6 a {
+    background-color: #4a7aec;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    padding: 15px 15px 15px 60px;
+    position: relative;
+    font-size: 15px;
+    text-transform: capitalize;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.single-accordion h6 a.collapsed {
+    background-color: #4a7aec;
+    color: #fff;
+}
+
+.single-accordion h6 a span {
+    font-size: 10px;
+    position: absolute;
+    left: 20px;
+    text-align: center;
+    top: 17px;
+}
+
+.single-accordion h6 a.collapsed span.accor-close {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+span.accor-open {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.single-accordion h6 a.collapsed span.accor-open {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+.single-accordion h6 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.single-accordion .accordion-content {
+    border-top: 0 solid transparent;
+    box-shadow: none;
+}
+
+.single-accordion .accordion-content p {
+    padding: 10px 15px 0;
+    margin-bottom: 10px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+color:#444444;
+}
+
+.single-accordion p {
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+/* --------------------------
+:: 12.0 Footer Area CSS
+-------------------------- */
+
+.footer-area {
+    position: relative;
+    z-index: 1;
+    background-color: #211b31;
+    display: block;
+}
+
+.top-footer-area {
+        background-color: #211b31;
+}
+
+#footer_desktop {
+ display: block;   
+}
+
+#footer_mobile {
+ display: none;   
+}
+.single-footer-widget h5 {
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+.single-footer-widget ul > li > a {
+    color: rgba(226, 219, 243, 0.30);
+    margin-bottom: 10px!important;
+    display: block;
+    font-weight: 500;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.single-footer-widget ul > li > a:last-child {
+    margin-bottom: 0;
+}
+
+.single-footer-widget ul > li > a:hover {
+    color: #ffffff;
+}
+
+.copyright-text > p {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.footer-social-info > a {
+    color: #abadbe;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.footer-social-info > a:hover {
+    color: #fff;
+}
+
+.footer-single--blog-post {
+    margin-bottom: 30px;
+}
+
+.footer-single--blog-post:last-child {
+    margin-bottom: 0;
+}
+
+.footer-single--blog-post .blog-post-date > p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer-single--blog-post .blog-post-title > h6 {
+    font-size: 14px;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.footer-single--blog-post .blog-post-date > p:hover,
+.footer-single--blog-post .blog-post-title > h6:hover {
+    color: #4a7aec;
+}
+
+.footer-single-contact-info .contact-icon {
+    margin-right: 15px;
+}
+
+.footer-bottom-area {
+    background-color: #191426;
+    height: 60px;
+}
+
+/* --------------------
+:: 13.0 Breadcumb CSS
+-------------------- */
+
+
+
+.bradcumbContent h2 {
+    color: #fff;
+    font-size: 60px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+      text-shadow: 2px 2px black;
+
+}
+
+.mh-presec-area h5 {
+    color: #fff;
+    font-size: 20px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+      text-shadow: 2px 2px black;
+    text-align: center;
+    margin:0;
+    padding:0;
+    bottom: 0;
+    margin-bottom: none;
+  align-items: center;
+    align-self: flex-end;
+}
+
+.bradcumbContent .breadcrumb {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.bradcumbContent .breadcrumb-item a,
+.bradcumbContent .breadcrumb-item {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mh-presec-area {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+ direction: rtl;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+      background-attachment: fixed;
+  background-position: center;
+}
+
+.bradcumbContent h2 {
+    color: #fff;
+    font-size: 60px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+    text-align: right;
+}
+
+
+
+.bradcumbContent .breadcrumb {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.bradcumbContent .breadcrumb-item a,
+.bradcumbContent .breadcrumb-item {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* -----------------------
+:: 14.0 About Us CSS
+----------------------- */
+
+.few-words-from-ceo {
+    overflow-x: hidden;
+height:300px;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+}
+
+.mosh-about-us-content .section-heading {
+    margin-bottom: 50px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+text-align: justify;
+line-height: 1.6;
+    font-weight: normal;
+}
+
+.mosh-about-us-content h2 {
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.mosh-about-us-content center:after {
+    display: block;
+    width: 35%;
+    height: 8px;
+    background-color: #008397;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    content: '';
+}
+
+.mosh-about-us-content h3 {
+padding-top: 10%;
+}
+
+.mosh-about-us-content p {
+font-family: 'Heebo', 'Open Sans Hebrew', Alef, David, "Times New Roman", Times, serif;
+font-size:20px;
+text-align: justify;
+color:#444444;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.mosh-about-us-content a {
+font-family: 'Heebo', 'Open Sans Hebrew', Alef, David, "Times New Roman", Times, serif;
+font-size:20px;
+text-align: justify;
+    text-decoration: underline;
+}
+
+.few-words-contents,
+.few-words-thumb {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 770px;
+font-family: 'Heebo', 'Open Sans Hebrew', Alef, David, "Times New Roman", Times, serif;
+text-align: justify;
+}
+
+.few-words-contents {
+    background-color: rgba(33,27,49, 0.6);
+}
+
+.few-words-contentsd {
+    background-color: #FCF7FF;
+}
+
+.few-words-text .section-heading {
+    margin-bottom: 50px;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+    line-height: 1.6;
+
+}
+
+
+.few-words-text .section-heading h2 {
+    color: #fff;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+}
+
+.few-words-text > p {
+    margin-bottom: 0;
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+    line-height: 1.6;
+
+}
+
+.ceo-meta-data .ceo-thumb {
+    width: 52px;
+    height: 52px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 52px;
+    flex: 0 0 52px;
+    border-radius: 50%;
+    margin-right: 20px;
+    line-height: 1.6;
+
+}
+
+.ceo-meta-data .ceo-name h6 {
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.ceo-meta-data .ceo-name p {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.6;
+
+}
+
+.mosh-about-us-thumb {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 250px;
+margin-top: 50px;
+    line-height: 1.6;
+
+}
+
+.mosh-about-us-thumb h3{
+ font-family:  'Yiddish', Guttman Stam, Alef, David, "Times New Roman", Times, serif;
+}
+
+
+.col-12 {
+
+}
+
+.col-12 p{
+font-family: 'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+}
+
+.col-12 a{
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+
+/* -------------------------
+:: 15.0 Services Area CSS
+------------------------- */
+
+.services-content-area {
+    position: relative;
+    z-index: 98;
+    padding: 100px 0 200px 0;
+}
+
+.services-text h2 {
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.services-text p {
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+/* -------------------------
+:: 16.0 Team Member Area
+------------------------- */
+.mosh-team-area h2{
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.mosh-team-area a{
+font-family:'Heebo', David, "Times New Roman", Times, serif;
+}
+
+.team-thumbnail {
+    width: 189px;
+    height: 189px;
+    border-radius: 50%;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.team-thumbnail:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(74, 122, 236, 0.75);
+    z-index: 2;
+    border-radius: 50%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.team-thumbnail > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.team-meta-info {
+    margin-bottom: 50px;
+}
+
+.team-meta-info h4 {
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.team-meta-info span {
+    font-size: 12px;
+    font-weight: 900;
+    color: #abadbe;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    display: block;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.team-social-info {
+    margin-top: 30px;
+}
+
+.team-social-info > a {
+    font-size: 13px;
+    color: #abadbe;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.single-team-slide:hover .team-meta-info span,
+.team-social-info > a:hover {
+    color: #4a7aec;
+}
+
+//.single-team-slide:hover .team-thumbnail:after {
+  //  opacity: 1;
+ //   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+//}
+
+.mosh-team-slides {
+    position: relative;
+    z-index: 2;
+}
+
+.mosh-team-slides .owl-prev,
+.mosh-team-slides .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    line-height: 60px;
+    text-align: center;
+    top: 21%;
+    margin-top: -30px;
+    left: -25px;
+    border-radius: 50%;
+    color: #a2baff;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.mosh-team-slides .owl-next {
+    left: auto;
+    right: -25px;
+}
+
+.mosh-subscribe-newsletter-area {
+    background-attachment: fixed;
+}
+
+.subscribe-newsletter-content p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.subscribe-newsletter-content h2 {
+    font-size: 44px;
+}
+
+.subscribe-newsletter-content form {
+    position: relative;
+    z-index: 1;
+}
+
+.subscribe-newsletter-content form > input {
+    width: 60%;
+    height: 55px;
+    border-radius: 70px;
+    border: none;
+    padding: 0 30px;
+    font-style: italic;
+    font-size: 14px;
+    color: #abadbe;
+}
+
+.subscribe-newsletter-content form > button {
+    width: 150px;
+    height: 55px;
+    border-radius: 0 70px 70px 0;
+    border: none;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4a7aec;
+    position: absolute;
+    right: 20%;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    top: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.subscribe-newsletter-content form > button:hover {
+    color: #fff;
+    background-color: rgb(16, 54, 145);
+}
+
+/* -------------------------
+:: 17.0 Clients Area
+------------------------- */
+
+.mosh-clients-testimonials-area {
+    background-color: #211b31;
+    position: relative;
+    z-index: 1;
+}
+
+.mosh-clients-testimonials-area .section-heading h2 {
+    color: #fff;
+}
+
+.testimonial-content span {
+    font-size: 60px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.testimonial-content p {
+    margin-bottom: 0;
+}
+
+.testimonials-meta .testimonial-thumb {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 3px solid #211b31;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.testimonials-meta > h6 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.testimonials-meta > p {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.testimonials-slides {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials-slides:before {
+    position: absolute;
+    width: 33.33333%;
+    text-align: center;
+    content: "Previous";
+    top: 0;
+    left: 0;
+    z-index: -5;
+    height: 100%;
+    color: #fff;
+}
+
+.testimonials-slides:after {
+    position: absolute;
+    width: 33.33333%;
+    text-align: center;
+    content: "Next";
+    top: 0;
+    right: 0;
+    z-index: -5;
+    height: 100%;
+    color: #fff;
+}
+
+.testimonials-slides .owl-prev,
+.testimonials-slides .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    line-height: 60px;
+    text-align: center;
+    top: 21%;
+    margin-top: -30px;
+    left: -25px;
+    border-radius: 50%;
+    color: #a2baff;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.testimonials-slides .owl-next {
+    left: auto;
+    right: -25px;
+}
+
+.testimonials-slides .single-testimonial-area .testimonial-content {
+    display: none;
+}
+
+.testimonials-slides .center .single-testimonial-area .testimonial-content {
+    display: block;
+}
+
+.single-testimonial-area:hover .testimonials-meta > h6,
+.testimonials-slides .center .single-testimonial-area .testimonials-meta > h6 {
+    color: #fff;
+}
+
+.single-testimonial-area:hover .testimonials-meta .testimonial-thumb {
+    border: 3px solid #4a7aec;
+}
+
+/* Sonar CSS */
+
+.testimonial-thumb:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    -webkit-animation: sonar-effect 1s ease-in-out 0s infinite;
+    animation: sonar-effect 1s ease-in-out 0s infinite;
+    z-index: -1
+}
+
+.testimonials-slides .center .testimonial-thumb:before {
+    display: none;
+}
+
+@-webkit-keyframes sonar-effect {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        box-shadow: 0 0 0 3px #4a7aec, 0 0 5px 5px #4a7aec, 0 0 0 5px #4a7aec;
+    }
+    100% {
+        box-shadow: 0 0 0 3px #4a7aec, 0 0 5px 5px #4a7aec, 0 0 0 5px #4a7aec;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+
+@keyframes sonar-effect {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        box-shadow: 0 0 0 3px #4a7aec, 0 0 5px 5px #4a7aec, 0 0 0 5px #4a7aec;
+    }
+    100% {
+        box-shadow: 0 0 0 3px #4a7aec, 0 0 5px 5px #4a7aec, 0 0 0 5px #4a7aec;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+.mosh-cool-facts-area.service-page {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+}
+
+.mosh-cool-facts-area.service-page .counter-area h3,
+.mosh-cool-facts-area.service-page .cool-facts-content p {
+    color: #fff;
+}
+
+.skills-text > p {
+    padding-right: 30px;
+}
+
+.skills-text > p:last-child {
+    padding-right: 0;
+}
+
+/* -----------------------
+:: 18.0 Blog Area CSS
+----------------------- */
+
+.blog-area {
+    position: relative;
+    z-index: 5;
+}
+
+.single-blog {
+    margin-bottom: 100px;
+}
+
+.single-blog .blog-post-thumb {
+    margin-bottom: 40px;
+}
+
+.single-blog h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    margin-bottom: 10px;
+}
+
+.post-meta h6 {
+    color: #b1b3c3;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.post-meta h6 a {
+    color: #b1b3c3;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.post-meta h6 a:hover {
+    color: #4a7aec;
+}
+
+.single-blog > a {
+    color: #6270ff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.single-blog p {
+    margin-bottom: 40px;
+}
+
+.mosh-pagination-area .page-link {
+    padding: 0;
+    line-height: 42px;
+    color: #007bff;
+    border: none;
+    border-radius: 0;
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    margin-left: 0;
+    border-radius: 0;
+}
+
+.blog-post-search-widget form {
+    position: relative;
+    z-index: 1;
+}
+
+.blog-post-search-widget form > input {
+    width: 100%;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-radius: 0;
+    border-right: none;
+    border-bottom: 2px solid #e6e7f4;
+}
+
+.blog-post-search-widget form > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+.blog-post-archives > h5,
+.blog-post-categories > h5,
+.latest-blog-posts > h5,
+.instagram-feeds > h5 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.blog-post-archives ul > li > a,
+.blog-post-categories ul > li > a {
+    color: #abadbe;
+    font-size: 15px;
+    display: block;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.latest-blog-post-content h6 > a {
+    color: #404551;
+}
+
+.latest-blog-post-content h6 > a:hover,
+.blog-post-archives ul > li > a:hover,
+.blog-post-categories ul > li > a:hover {
+    color: #4a7aec;
+}
+
+.single-latest-blog-post {
+    margin-bottom: 20px;
+}
+
+.latest-blog-post-thumb {
+    width: 70px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    margin-right: 20px;
+}
+
+.instagram-feeds ul > li {
+    width: calc(33.3333333% - 8px);
+    margin: 4px;
+    display: inline-block;
+    float: left;
+}
+
+/* ----------------------
+:: 19.0 Contact Page CSS
+---------------------- */
+
+.contact-form-area h2,
+.contact-information h2 {
+    font-size: 40px;
+    font-weight: 900;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.contact-information p {
+font-family:'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+font-size: 16px;
+}
+
+.contact-form-area .form-control {
+    font-size: 12px;
+    color: #cbcddc;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ebebeb;
+    border-radius: 0;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-style: italic;
+}
+
+.contact-form-area .form-control:hover,
+.contact-form-area .form-control:focus {
+    box-shadow: none;
+}
+
+.contact-form-area textarea.form-control {
+    height: 140px;
+}
+
+.contact-social-info > a {
+    color: #cbcddc;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.contact-social-info > a:hover {
+    color: #4a7aec;
+}
+
+#googleMap {
+    width: 100%;
+    height: 680px;
+}
+
+/* -----------------------
+:: 20.0 Elements Area CSS
+----------------------- */
+
+.elements-title h2 {
+    margin-bottom: 60px;
+    font-size: 24px;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.mosh-btn.mosh-btn-2 {
+    border: 2px solid #4a7aec;
+    color: #404551;
+    background-color: #fff;
+font-family: Alef, David, "Times New Roman", Times, serif;
+}
+
+.mosh-btn.mosh-btn-2:hover,
+.mosh-btn.mosh-btn-2:focus {
+    border: 2px solid #4a7aec;
+    color: #fff;
+    background-color: #4a7aec;
+}
+
+.mosh-btn.mosh-btn-3 {
+    border: none;
+    color: #404551;
+    background-color: #fff;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mosh-btn.mosh-btn-3:hover,
+.mosh-btn.mosh-btn-3:focus {
+    color: #fff;
+    background-color: #4a7aec;
+}
+
+.mosh-cool-facts-area {
+    width: 100%;
+}
+
+.mosh-cool-facts-area .counter-area > h3 {
+    color: #4a7aec;
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 1;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.mosh-cool-facts-area .cool-facts-content > p {
+    color: #292d4f;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+/* --------------------------
+:: 8.0 Side Tab
+-------------------------- */
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #DFF5FA;
+  width: 30%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+    text-align: right;
+  cursor: pointer;
+  transition: 0.3s;
+z-index:4;
+position:relative;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #211B31;
+    color: #FCF7FF;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #211b31;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+font-family: 'Heebo', Open Sans Hewbrew, David, "Times New Roman", Times, serif;
+  float: right;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+    text-align: right;
+  display: none;
+    font-size:20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.tabcontent p{
+color:black;
+font-family: 'Heebo', Open Sans Hebrew, David, "Times New Roman", Times, serif;
+font-size:20px;
+text-align: justify;
+    line-height: 1.6;
+}
+
+.tabcontent img{
+width:60%;
+}
+
+.square{
+background-color: #D8E8EC;
+width: 75%;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.square h2{
+background-color: #265D84;
+color: white;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+.square h4{
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+    color: #2D3C58;
+}
+
+.square p{
+color: #444444;
+text-align: justify;
+font-size: 20px;
+font-family:'Heebo', Open Sans Hebrew, Alef, David, "Times New Roman", Times, serif;
+}
+
+/* --------------------------
+:: 15.0 Maslulim
+-------------------------- */
+
+.maslulim {
+    
+}
+
+.maslulim img{
+ height: 80px;
+    width:80px;
+}
+
+
+
+
+/* --------------------------
+:: 16.0 Courses
+-------------------------- */
+.courses-inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+        
+}
+.course{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 30px);
+    min-width: 270px;
+    margin: 10px;
+    padding-bottom: 41px;
+    text-align: center;
+    color: #32466b;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.course .course-image{
+    padding-bottom: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.course .course-title:before{
+    display: block;
+    width: 25%;
+    height: 6px;
+    background-color: #008397;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    content: '';
+}
+.course .course-title{
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 170%;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.course .course-description{
+    display: block;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: 95%;
+    overflow: hidden;
+    font-size: 100%;
+    line-height: 1.2;
+    height: 100px;
+    text-align:justify;
+    -moz-text-align-last: right; /* Code for Firefox */
+text-align-last: center;
+}
+.course .course-link{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 0;
+    color: white;
+    background-color: #2D8495;
+    font-size: 110%;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+}
+.course .course-link:hover{
+    background-color: #1a2945;
+}
+
+/* --------------------------
+:: 17.0 Parallax
+-------------------------- */
+
+.parallax {
+    background-color: rgba(93,114,128,0.05);
+  /* The image used */
+  background-image: url("img/blog-img/proccess.jpg");
+
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.parallax:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(93,114,128,0.05);
+  /* The image used */
+  background-image: url("img/blog-img/proccess.jpg");
+    background: url("img/blog-img/proccess.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax_bread {
+  /* The image used */
+  background-image: url("img/blog-img/maslulim-4.jpg");
+
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+        width: 100%;
+    height: 100%;
+        -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+}
+
+.parallax_herev {
+  /* The image used */
+  background-image: url("img/blog-img/herevbg.jpg");
+
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+        width: 100%;
+    height: 100%;
+}
+
+.parallax_index:
+
+/* --------------------------------
+============= Pop Up =============
+---------------------------------*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+text-align:right;
+font-family:'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+text-align:right;
+font-family: 'Heebo', Alef, David, "Times New Roman", Times, serif;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* --------------------------------
+============= The End =============
+---------------------------------*/

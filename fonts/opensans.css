@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    src: url('subset-OpenSansHebrew-Regular.eot');
+    src: url('subset-OpenSansHebrew-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-OpenSansHebrew-Regular.woff2') format('woff2'),
+        url('subset-OpenSansHebrew-Regular.woff') format('woff'),
+        url('subset-OpenSansHebrew-Regular.ttf') format('truetype'),
+        url('subset-OpenSansHebrew-Regular.svg#OpenSansHebrew-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
